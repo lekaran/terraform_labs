@@ -15,6 +15,7 @@ Une NAT Gateway (1 seule, dans la première AZ)
 Des route tables configurées pour chaque type de subnet
 
 ## 📁 Structure attendue du projet
+```bash
 terraform-vpc/
 ├── modules/
 │   └── vpc/
@@ -27,6 +28,7 @@ terraform-vpc/
 │       ├── variables.tf
 │       ├── terraform.tfvars
 │       ├── backend.tf (optionnel)
+```
 
 ## 📌 Étapes
 ### ✅ Étape 1 – Initialisation du projet
