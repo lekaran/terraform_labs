@@ -38,10 +38,6 @@ Crée la structure ci-dessus
 
 Initialise ton provider AWS dans environments/dev/main.tf
 
-hcl
-Copier
-Modifier
-
 ```terraform
 provider "aws" {
   region = var.aws_region
