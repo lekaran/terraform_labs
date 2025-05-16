@@ -42,9 +42,11 @@ hcl
 Copier
 Modifier
 
+```terraform
 provider "aws" {
   region = var.aws_region
 }
+```
 
 ### ✅ Étape 2 – Crée le module VPC
 Dans modules/vpc/ :
@@ -66,6 +68,7 @@ VPC ID, subnet IDs, route table IDs, etc.
 ### ✅ Étape 3 – Utilisation du module
 Dans environments/dev/main.tf :
 
+```terraform
 module "vpc" {
   source         = "../../modules/vpc"
   vpc_cidr       = "10.0.0.0/16"
@@ -74,6 +77,7 @@ module "vpc" {
   azs            = ["eu-west-1a", "eu-west-1b"]
   enable_nat     = true
 }
+```
 
 ### ✅ Étape 4 – Variables & tfvars
 Crée variables.tf dans environments/dev pour définir aws_region, etc.
